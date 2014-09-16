@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>798</width>
+    <height>641</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>791</width>
+     <height>621</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Nuevo Producto</string>
+    </attribute>
+    <widget class="QWidget" name="gridLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>771</width>
+       <height>191</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_15">
+        <property name="text">
+         <string>Categoria:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="productoingre"/>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="tipodeproducto"/>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="precioingre"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_16">
+        <property name="text">
+         <string>Descripcion:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_17">
+        <property name="text">
+         <string>Precio:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QToolButton" name="toolButton">
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QToolButton" name="toolButton_2">
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QToolButton" name="toolButton_3">
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QTextBrowser" name="txbNuevos">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>210</y>
+       <width>771</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(147, 190, 255);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>470</y>
+       <width>331</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_8">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>450</y>
+       <width>251</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Agregar Productos</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>460</y>
+       <width>93</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Precios</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_13">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>460</y>
+       <width>91</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Fiado</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>570</y>
+       <width>81</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Pymes.INC</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Vender</string>
+    </attribute>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>100</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Precio del articulo:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>210</y>
+       <width>66</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="totalar">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>100</y>
+       <width>371</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(147, 190, 255);</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="txbVentas">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>340</y>
+       <width>771</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(147, 190, 255);</string>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="totaldecom">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>270</y>
+       <width>401</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(147, 190, 255);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>240</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Total de la compra:</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="horizontalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>10</y>
+       <width>751</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Categoria:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="combocate">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="horizontalLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>60</y>
+       <width>751</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Descripcion:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="combodes"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="btnSalirDelTodo">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>510</y>
+       <width>321</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Salir</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnfacturar">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>470</y>
+       <width>421</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Vender!</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>520</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../../../../Descargas/close_button.png</pixmap>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>570</y>
+       <width>81</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Pymes.INC</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>190</y>
+       <width>771</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>combocate</tabstop>
+  <tabstop>combodes</tabstop>
+  <tabstop>txbVentas</tabstop>
+  <tabstop>tipodeproducto</tabstop>
+  <tabstop>productoingre</tabstop>
+  <tabstop>precioingre</tabstop>
+  <tabstop>txbNuevos</tabstop>
+  <tabstop>pushButton_8</tabstop>
+  <tabstop>toolButton</tabstop>
+  <tabstop>toolButton_2</tabstop>
+  <tabstop>toolButton_3</tabstop>
+  <tabstop>tabWidget</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnfacturar</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>vender()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>357</x>
+     <y>539</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>776</x>
+     <y>464</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>combocate</sender>
+   <signal>activated(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>tipodeprofun()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>579</x>
+     <y>64</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>776</x>
+     <y>54</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>combodes</sender>
+   <signal>activated(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>productoprecio()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>684</x>
+     <y>114</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>776</x>
+     <y>114</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_8</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>agregarprod()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>512</x>
+     <y>519</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>776</x>
+     <y>509</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>opcion1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>781</x>
+     <y>89</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>776</x>
+     <y>37</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>opcion2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>781</x>
+     <y>145</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>776</x>
+     <y>88</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>opcion3()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>781</x>
+     <y>201</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>776</x>
+     <y>140</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnSalirDelTodo</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>salir()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>534</x>
+     <y>579</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>798</x>
+     <y>575</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>qt()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>162</x>
+     <y>494</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>806</x>
+     <y>452</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_13</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>empleados()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>522</x>
+     <y>515</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>797</x>
+     <y>487</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>tipodeprofun()</slot>
+  <slot>productoprecio()</slot>
+  <slot>agregarprod()</slot>
+  <slot>cerrar()</slot>
+  <slot>empleados()</slot>
+  <slot>opcion1()</slot>
+  <slot>opcion2()</slot>
+  <slot>opcion3()</slot>
+  <slot>limpiar()</slot>
+  <slot>infopymes()</slot>
+  <slot>salir()</slot>
+  <slot>vender()</slot>
+  <slot>qt()</slot>
+ </slots>
+</ui>

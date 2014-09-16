@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>489</width>
+    <height>298</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>100</y>
+     <width>191</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Vender Productos</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>0</y>
+     <width>331</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Bienvenido al menu de Pymes, que desea hacer?</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>270</y>
+     <width>93</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>231</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../menu.png</pixmap>
+   </property>
+  </widget>
+  <zorder>label_2</zorder>
+  <zorder>pushButton_2</zorder>
+  <zorder>pushButton_3</zorder>
+  <zorder>label</zorder>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>salir()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>68</x>
+     <y>283</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>118</x>
+     <y>275</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>nuevo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>353</x>
+     <y>181</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>434</x>
+     <y>238</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>salir()</slot>
+  <slot>vender()</slot>
+  <slot>nuevo()</slot>
+ </slots>
+</ui>

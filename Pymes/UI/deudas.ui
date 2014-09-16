@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>426</width>
+    <height>165</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Guardar</string>
+  </property>
+  <widget class="QPushButton" name="btnGuardar">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>100</y>
+     <width>80</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Guardar</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cmbPersonas">
+   <property name="geometry">
+    <rect>
+     <x>69</x>
+     <y>10</y>
+     <width>351</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Nada</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="lblNombre">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>40</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Nombre:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtNombre">
+   <property name="geometry">
+    <rect>
+     <x>69</x>
+     <y>39</y>
+     <width>351</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblApellido">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>70</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Apellido:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblDni">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>120</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Debe:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtApellido">
+   <property name="geometry">
+    <rect>
+     <x>69</x>
+     <y>68</y>
+     <width>351</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtDni">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>120</y>
+     <width>125</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblResultados">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>140</y>
+     <width>311</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnLimpiar">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>100</y>
+     <width>80</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Limpiar</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>130</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cerrar</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnGuardar</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>guardar()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>365</x>
+     <y>114</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>422</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmbPersonas</sender>
+   <signal>currentIndexChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>buscar()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>126</x>
+     <y>16</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>38</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnLimpiar</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>limpiar()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>281</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>216</x>
+     <y>117</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>cerrar()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>33</x>
+     <y>144</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>3</x>
+     <y>123</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>guardar()</slot>
+  <slot>buscar()</slot>
+  <slot>limpiar()</slot>
+  <slot>cerrar()</slot>
+ </slots>
+</ui>
